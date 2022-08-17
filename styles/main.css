@@ -29,6 +29,8 @@ body {
   min-height: 100vh;
 }
 
+/* ? HEADER */
+
 .header {
   padding: 2px;
   display: flex;
@@ -36,6 +38,13 @@ body {
   align-items: center;
   min-height: 100vh;
   justify-content: space-around;
+}
+
+.container-title-header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-title {
@@ -123,8 +132,11 @@ body {
 
 /* ! header */
 
+/* ?MAIN */
+
 .section {
   min-height: 100vh;
+  margin-top: 1rem;
 }
 
 .container-title-section {
@@ -263,7 +275,65 @@ body {
   transform: scale(0.9);
 }
 
+/* projects */
+
+.container-projects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.project {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.project:hover {
+  transform: scale(1.4);
+  border: 1px solid white;
+}
+
+.project-header {
+  background-color: blue;
+  width: 100%;
+  height: 50%;
+}
+
+.project-body {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color);
+}
+
+.project-body-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-header-1 {
+  background-image: url("../assets/img/five.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -8px;
+}
+
+/* contact */
+
 /* !main */
+
+/* ? FOOTER */
 
 .footer {
   text-align: center;
@@ -296,4 +366,62 @@ body {
     brightness(96%) contrast(92%);
 }
 
+.hand {
+  width: 2.5rem;
+}
+
 /* ! footer */
+
+/* ? MENU   */
+
+.menu-button {
+  background-color: var(--text-color);
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 01rem;
+  right: 01rem;
+  z-index: 1;
+}
+
+.active {
+  background-color: var(--text-color-span);
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.show-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1ce1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 2rem;
+  justify-content: space-around;
+  transform: translateX(-100%);
+  transition: all 0.8s ease;
+}
+
+.show-menu a {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.6s ease;
+}
+
+.show-menu a:hover {
+  background-color: var(--text-color-span);
+}
+
+.translate {
+  transform: translateX(0%);
+}
+
+/* ! menu */
