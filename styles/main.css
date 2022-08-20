@@ -292,6 +292,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.4s ease;
+  border: 2px solid var(--text-color);
 }
 
 .project:hover {
@@ -320,6 +321,14 @@ body {
 .project-body-icons {
   display: flex;
   gap: 2rem;
+}
+
+.project-header-0 {
+  background-image: url("../assets/img/portfolioImg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--text-color-span);
+  background-position: -63px -2px;
 }
 
 .project-header-1 {
