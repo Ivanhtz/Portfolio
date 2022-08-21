@@ -1,6 +1,7 @@
 const buttonMenu = document.querySelector(".menu-button");
 const linkMenu = document.querySelectorAll(".link-menu");
 const menu = document.querySelector(".show-menu");
+
 let view = false;
 
 linkMenu.forEach((item) =>

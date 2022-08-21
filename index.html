@@ -49,6 +49,14 @@
             <p class="text-aboutme">Sobre Mí</p>
           </a>
         </div>
+
+        <div class="icon-about tooltip">
+          <a href="#">
+            <img src="./assets/img/mail.png" alt="mail" />
+            <span class="tooltip-box">info@ivanpizarroso.com</span>
+          </a>
+        </div>
+
         <div class="icon-cv">
           <a
             href="./docs/Currículum_Iván.pdf"
@@ -66,6 +74,7 @@
         <div class="container-title-section">
           <span class="number">1</span>
           <h2 class="title-section">Sobre Mí</h2>
+          <span class="divider"></span>
         </div>
 
         <div class="container-info">
@@ -122,6 +131,7 @@
         <div class="container-title-section">
           <span class="number">2</span>
           <h2 class="title-section">Tecnologías</h2>
+          <span class="divider"></span>
         </div>
 
         <article class="article">
@@ -252,6 +262,7 @@
         <div class="container-title-section">
           <span class="number">3</span>
           <h2 class="title-section">Proyectos</h2>
+          <span class="divider"></span>
         </div>
 
         <div class="container-projects">
@@ -473,7 +484,37 @@
         <div class="container-title-section">
           <span class="number">4</span>
           <h2 class="title-section">Contáctame</h2>
+          <span class="divider"></span>
         </div>
+
+        <form
+          class="form"
+          action="https://formspree.io/f/xnqrnazy"
+          method="POST"
+        >
+          <div class="container-form">
+            <h2 class="form-title">Contáctame</h2>
+            <input
+              type="text"
+              name="name"
+              class="form-input form-name"
+              placeholder="Nombre:"
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-input form-mail"
+              placeholder="Email:"
+            />
+            <textarea
+              class="form-input form-input__message"
+              name="message"
+              placeholder="Mensaje:"
+            ></textarea>
+
+            <input type="submit" value="Enviar" class="form-cta" />
+          </div>
+        </form>
       </section>
     </main>
 
