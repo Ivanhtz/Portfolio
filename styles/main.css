@@ -318,12 +318,14 @@ body {
   background-image: url("../assets/img/portfolioImg2.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   background-color: var(--text-color-span);
   background-position: -63px -2px;
 }
 
 .project-header-1 {
   background-image: url("../assets/img/five.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -8px;
@@ -527,6 +529,7 @@ body {
 /* ? Media Queries */
 
 /* Mobile */
+
 @media screen and (max-width: 767px) {
   .section {
     margin: 2rem 0;
@@ -575,8 +578,8 @@ body {
   }
 
   .title-section {
-    font-size: 2rem;
-    margin-left: 1rem;
+    font-size: 1.7rem;
+    margin-left: 0.7rem;
   }
 
   .divider {
