@@ -21,6 +21,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
 /* ************************************************ */
 
 body {
@@ -348,6 +349,7 @@ body {
   text-align: center;
   font-size: 1.9rem;
   margin-bottom: 0.4em;
+  color: var(--text-color);
 }
 
 .form-input {
@@ -520,4 +522,396 @@ body {
   background-color: var(--text-color);
   height: 1px;
   width: 60%;
+}
+
+/* ? Media Queries */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .section {
+    margin: 2rem 0;
+  }
+
+  .menu-button {
+    width: 3rem;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .container-rrss-header {
+    width: 103%;
+  }
+
+  .linkedin,
+  .github {
+    width: 2.5rem;
+  }
+
+  .container-icons-header {
+    width: 95%;
+  }
+
+  .icon-about,
+  .icon-cv {
+    width: 5.2rem;
+  }
+
+  .tooltip-box {
+    font-size: 15px;
+    right: -78px;
+    bottom: 138px;
+  }
+  /* !header */
+
+  .container-title-section {
+    justify-content: start;
+    gap: 1;
+  }
+
+  .title-section {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .divider {
+    width: 40%;
+    position: relative;
+    left: 27px;
+  }
+  /* !titles */
+
+  .container-info {
+    flex-direction: column-reverse;
+
+    padding: 0.8rem;
+  }
+
+  .subtitle-info {
+    margin: 1rem 0;
+  }
+
+  .info-text {
+    padding: 0.5rem;
+    width: 100%;
+
+    font-size: 1.3rem;
+  }
+
+  .container-info-img {
+    margin: 2rem 0;
+  }
+
+  .container-info-buttons {
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  /* !about me */
+
+  .container-article {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .title-article {
+    font-size: 2rem;
+  }
+
+  .skill {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .project {
+    width: 100%;
+    border: none;
+    margin: 1rem 0;
+  }
+
+  .project:hover {
+    transform: scale(1);
+    border: none;
+  }
+
+  .project-body h3 {
+    font-size: 1.6rem;
+  }
+
+  .project-body p {
+    font-size: 1.2rem;
+  }
+
+  .project-body-icons {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+  }
+
+  .container-form {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .container-text-footer {
+    margin: 1rem 0;
+  }
+
+  .container-rrss-footer {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .section {
+    margin: 3rem 0;
+  }
+
+  .container-title-header {
+    width: 61%;
+  }
+
+  .container-rrss-header {
+    width: 60%;
+  }
+
+  .container-icons-header {
+    width: 70%;
+  }
+
+  .title-section {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+  }
+
+  .container-info {
+    flex-direction: column-reverse;
+  }
+
+  .subtitle-info {
+    margin: 1.2rem 0;
+  }
+
+  .info-text {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .container-info-img {
+    margin-bottom: 1.8rem;
+  }
+
+  .button {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+
+  .container-article {
+    padding: 1rem;
+  }
+
+  .title-article {
+    font-size: 2.2rem;
+    margin: 1.5rem;
+  }
+
+  .skill {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .project:hover {
+    transform: scale(1);
+    border: none;
+  }
+
+  .project {
+    width: 21rem;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .project-body h3 {
+    font-size: 1.7rem;
+    margin-top: 1.2rem;
+  }
+
+  .project-body p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .project-body-icons {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0.8rem 0;
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+
+  .container-rrss-footer {
+    width: 20%;
+    justify-content: space-around;
+  }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1281px) {
+  .number {
+    font-size: 2.7rem;
+  }
+  .section {
+    margin-top: 2rem;
+  }
+  .container-title-header {
+    width: 42%;
+  }
+  .container-icons-header {
+    width: 50%;
+  }
+
+  .title-section {
+    font-size: 2.5rem;
+    margin: 0 1.2rem;
+  }
+
+  .container-info-img {
+    position: relative;
+    bottom: 3rem;
+  }
+
+  .button {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-text {
+    width: 52%;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .title-article {
+    font-size: 2rem;
+  }
+
+  .project {
+    margin: 1rem 0;
+  }
+
+  .project-body h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-body p {
+    font-size: 1.2rem;
+  }
+
+  .project-body-icons {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .footer {
+    width: 30%;
+    justify-content: space-around;
+  }
+
+  .container-rrss-footer {
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-width: 1282px) and (max-width: 1441px) {
+  .number {
+    font-size: 2.8rem;
+  }
+  .section {
+    margin: 3rem 0;
+  }
+  .container-icons-header {
+    width: 49%;
+  }
+
+  .title-section {
+    font-size: 2.7rem;
+    margin: 0 1.2rem;
+  }
+
+  .container-info-img {
+    position: relative;
+    bottom: 3rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-text {
+    font-size: 1.5rem;
+  }
+
+  .subtitle-info {
+    margin: 1rem 0;
+  }
+
+  .title-article {
+    font-size: 2.3rem;
+  }
+
+  .project {
+    margin: 1rem 0;
+  }
+
+  .project h3 {
+    font-size: 1.6rem;
+  }
+  .project {
+    font-size: 1.3rem;
+  }
+
+  .project-body-icons {
+    width: 35%;
+    justify-content: space-between;
+  }
+
+  .footer {
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  .container-rrss-footer {
+    width: 20%;
+    justify-content: space-between;
+  }
 }
