@@ -268,67 +268,52 @@ body {
 
 /* projects */
 
-.container-projects {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.project__flex {
+  margin-top: 2rem;
+  display: grid;
   gap: 1rem;
-  justify-content: space-around;
-  margin: 2rem 0;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
 .project {
-  width: 20rem;
-  height: 20rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.4s ease;
-  border: 2px solid var(--text-color);
 }
 
-.project:hover {
-  transform: scale(1.2);
-  border: 1px solid white;
+.project__title {
+  margin-top: 1rem;
 }
 
-.project-header {
-  background-color: blue;
+.project__img {
   width: 100%;
-  height: 50%;
+  display: block;
 }
 
-.project-body {
-  background-color: var(--secondary-color);
-  width: 100%;
-  height: 50%;
-  text-align: center;
+.project__body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: var(--text-color);
+  gap: 1.5rem;
+  height: 50%;
 }
 
-.project-body-icons {
+.project__icons {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
 }
 
-.project-header-0 {
-  background-image: url("../assets/img/portfolioImg2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-color: var(--text-color-span);
-  background-position: -63px -2px;
+.project__icon--github {
+  margin-right: 1rem;
 }
 
-.project-header-1 {
-  background-image: url("../assets/img/five.png");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px -8px;
+.project__icon--web {
+  margin-left: 1rem;
 }
 
 /* contact */
